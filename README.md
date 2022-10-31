@@ -32,7 +32,7 @@ Number: 6176292929
 INVALID
 ```
 
-### Luhn’s Algorithm:
+#### Luhn’s Algorithm:
 Most cards use an algorithm invented by Hans Peter Luhn of IBM. According to Luhn’s algorithm, you can determine if a credit card number is (syntactically) valid as follows:
 
 1. Multiply every other digit by 2, starting with the number’s second-to-last digit, and then add those products’ digits together.
@@ -40,8 +40,22 @@ Most cards use an algorithm invented by Hans Peter Luhn of IBM. According to Luh
 3. If the total’s last digit is 0 (or, put more formally, if the total modulo 10 is congruent to 0), the number is valid.
 
 
-### Credit Cards:
+#### Credit Cards:
 
 American Express uses 15-digit numbers, MasterCard uses 16-digit numbers, and Visa uses 13- and 16-digit numbers. 
 
 All American Express numbers start with 34 or 37; most MasterCard numbers start with 51, 52, 53, 54, or 55 (they also have some other potential starting numbers which we won’t concern ourselves with for this problem); and all Visa numbers start with 4.
+
+#### Compiling And Execution:
+
+Before execution of the program, it must be compiled with a compiler, translating it from source code into machine code.\
+Execute the command below in the Command Line to do that:
+
+```C
+make credt
+```
+
+Execute the program by executing the below:
+```C
+./credit
+```
